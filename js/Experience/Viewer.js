@@ -195,6 +195,7 @@ class _Viewer {
         this.activeModel.children[1].rotation.z += 0.05
       }
 
+      // hammer
       if (
         this.activeModel.children[0] &&
         this.activeModel.children[0].name.includes('HammerBody')
@@ -202,6 +203,7 @@ class _Viewer {
         this.activeModel.rotation.y -= 0.025
       }
 
+      // fan
       if (
         this.activeModel.children[0] &&
         this.activeModel.children[0].name.includes('Fan')
@@ -209,6 +211,7 @@ class _Viewer {
         this.activeModel.rotation.y -= 0.05
       }
 
+      // door
       if (
         this.activeModel.children[0] &&
         this.activeModel.children[0].name.includes('Door_Block_lp')
@@ -216,6 +219,7 @@ class _Viewer {
         this.activeModel.position.x = Math.sin(t / 1000)
       }
 
+      // big bumper
       if (
         this.activeModel.children[0] &&
         this.activeModel.children[0].name.includes('BigBumper')
@@ -223,6 +227,7 @@ class _Viewer {
         this.activeModel.position.y = Math.sin(t / 1000) + 1
       }
 
+      // cany bumper
       if (
         this.activeModel.children[0] &&
         this.activeModel.children[0].name.includes('Candy')
@@ -231,6 +236,7 @@ class _Viewer {
         this.activeModel.position.x = Math.sin(t / 1000)
       }
 
+      // crown
       if (
         this.activeModel.children[0] &&
         this.activeModel.children[0].name.includes('Crown')
@@ -238,6 +244,7 @@ class _Viewer {
         this.activeModel.rotation.y += 0.01
       }
 
+      // bumper 2
       if (
         this.activeModel.children[0] &&
         this.activeModel.children[0].name.includes('BumperRotatingModule')
