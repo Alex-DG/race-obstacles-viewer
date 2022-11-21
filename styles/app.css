@@ -10,39 +10,25 @@ body {
   background-color: rgb(106, 106, 113);
 }
 
-#app > .container {
-  margin-top: 60px;
+#app {
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 1em;
-
-  position: absolute;
-  z-index: 1;
+  padding: 1em;
+  z-index: 999;
   width: 100%;
 }
-#app > .container > h1 {
-  color: rgb(247, 247, 247);
-}
-#app > .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
 
-  position: absolute;
-  z-index: 1;
-  width: 100%;
+#app > button {
+  border: 2px solid aliceblue;
+  background-color: rgb(125, 181, 230);
+  color: aliceblue;
+  padding: 0.35rem 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#app > .container > h1 {
-  color: rgb(247, 247, 247);
-}
-#app > .container > a {
-  color: hotpink;
-}
-
 #experience {
   position: fixed;
 

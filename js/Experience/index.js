@@ -8,6 +8,7 @@ class Experience {
   constructor(options) {
     this.scene = new THREE.Scene()
     this.container = options.domElement
+    this.clock = new THREE.Clock()
     this.init()
   }
 
@@ -129,7 +130,7 @@ class Experience {
     //   // this.light2.target.updateMatrixWorld()
     // }
 
-    Viewer?.update(t)
+    Viewer?.update(t, this.clock.getDelta())
 
     // Render
     this.renderer.render(this.scene, this.camera)
